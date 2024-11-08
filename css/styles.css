@@ -1,0 +1,551 @@
+@font-face {
+   font-family: 'Billy Ohio';
+   src: url('../fonts/BillyOhio.eot');
+   src:url('../fonts/BillyOhio.woff') format('woff');
+   src:url('../fonts/BillyOhio.ttf') format('truetype');
+   font-weight:normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Bebas Neue';
+   src: url('../fonts/BebasNeueRegular.eot');
+   src:url('../fonts/BebasNeueRegular.woff') format('woff');
+   src:url('../fonts/BebasNeueRegular.ttf') format('truetype');
+   font-weight:normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Bebas Neue';
+   src: url('../fonts/BebasNeueBold.eot');
+   src:url('../fonts/BebasNeueBold.woff') format('woff');
+   src:url('../fonts/BebasNeueBold.ttf') format('truetype');
+   font-weight:700;
+   font-style: normal;
+}
+   body{
+      margin: 0;
+      padding: 0;  
+   }
+   .wrapper{
+      margin: 0 auto;
+      width:1500px;
+      font: 18px 'Lato', sans-serif;
+      font-weight: 500;
+   }
+   .header-bg-image{
+      width: 1500px;
+      height: 960px;
+      position: relative;
+      overflow: hidden;
+   }
+   .header-image-bg{
+      filter: brightness(30%);
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: -1;
+   }
+   header{
+      position: absolute;
+      top:60px;
+      left: 65px;
+      z-index: 2;
+   }
+   .header-image-logo{
+      position: absolute;
+      top:16px;
+      left:155px;
+   }
+   .top-logo{
+      float:left;
+      color:#fff;
+      text-align: center;
+      margin-right: 250px;
+   }
+   .top-logo h1{
+      margin: 0;
+      font:34px/30px 'Bebas Neue';
+      letter-spacing: 2px;
+      font-weight: 600;
+   }
+   .top-logo h1 span{
+      color:#cd0a2d;
+   }
+   .top-logo div{
+      font:16px/14px 'Montserrat', sans-serif;
+   }
+   header nav{
+      float: right;
+   }
+   .top-menu{
+      margin: 0 40px 0 0;
+      padding: 0;
+      display: inline-block;
+   }
+   .top-menu li{
+      display: inline-block;
+      margin-right: 20px;
+      list-style-type: none;
+   }
+   .top-menu a{
+      font:16px/27px 'Montserrat', sans-serif;
+      color:#fff;
+      text-decoration: none;
+      display: inline-block;
+   }
+   .top-menu a:hover{
+     text-decoration: underline;  
+   }
+   .top-menu a:active{
+      color:#ffa500;   
+   }
+   .top-social{
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      vertical-align: middle;
+   }
+   .top-social li{
+      list-style-type: none;
+      display: inline-block;
+      margin-left: 20px;
+      text-align: center;
+      box-sizing: border-box;
+   }
+   .top-social a{
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border:5px solid #fff;
+      border-radius: 50%;
+      text-align: center;
+      box-sizing: border-box;
+      vertical-align: top;
+      transition:border-color, background-color 0.4s;
+   }
+   .top-social a:hover{
+      border-color: #000;
+      background-color: #ffa500;
+   }
+   .top-social a:active{
+      border-color: #ffa500;
+      background-color: #cd0a2d;
+   }
+  .top-social a:hover img{
+      filter: brightness(0);
+   }
+   .top-social img{
+      margin-top: 10px;
+   }
+   .banner-content{
+      height: 960px;
+   }
+   .triangleHeaderWhite{
+      width:0;
+      height: 0;
+      border-top:530px solid transparent;
+      border-right: 1500px solid #fff;
+      position: absolute;
+      bottom:0;
+      left:0;
+   }
+   .triangleHeaderRed{
+      width:0;
+      height: 0;
+      border-bottom:960px solid transparent;
+      border-right: 960px solid #cd0a2d;
+      position: absolute;
+      top:0;
+      right:0;
+   }
+   .main-moto-image{
+      position: absolute;
+      bottom:25px;
+      left:15%;
+   }
+   .banner-main-text{
+      font-family: 'Billy Ohio';
+      font-size: 115px;
+      line-height: 95px;
+      color:#fff;
+      text-shadow: 4px 1px 0px #00000080;
+      position: absolute;
+      top:210px;
+      left:13%;
+      text-align: center;
+   }
+   .moto-tours{
+      height: 705px;
+      background:#ededed;
+      background: -webkit-linear-gradient(bottom, #ededed, #fff);
+      background: -o-linear-gradient(bottom, #ededed, #fff);
+      background: -ms-linear-gradient(bottom, #ededed, #fff);
+      text-align: center;
+   }
+   .moto-tours figure{
+      display: inline-block;
+      margin:25px 22px;
+      text-align: left;
+      width: 363px;
+      vertical-align: top;
+      position: relative;
+      transition: transform 0.5s;
+   }
+   .moto-tours figure:hover{
+      transform: scale(1.1);
+   }
+   .moto-tours figure img{
+      width: 363px;
+      height: 350px;
+   }
+   .moto-tours h3{
+      font:26px/30px 'Open Sans', sans-serif;
+      font-weight: 700;
+      margin:50px 0 20px;
+   }
+   .moto-tours p{
+      color:#676767;
+      margin:0 0 35px 0;
+   }
+   .moto-tours .button a{
+     color:#fff;
+     text-decoration: none;
+     font:21px/38px 'Bebas Neue';
+     display: inline-block;
+     background-color:#cd0a2d;
+     padding: 0 20px;
+     border-radius: 30px;
+     transition: transform 0.5s;
+   }
+   .moto-tours .button a:hover{
+      transform: scale(1.2);
+   }
+   .moto-tours .button a:active{
+      color:orange;
+   }
+   .moto-tours .triangle{
+      width: 0;
+      height: 0;
+      border-top: 186px solid transparent;
+      border-left: 175px solid #cd0a2d;
+      position: absolute;
+      top: 187px;
+      left:-20px
+   }
+   .moto-tours .price{
+      color:#fff;
+      font:56px 'Bebas Neue';
+      position: absolute;
+      top:250px;
+      left:10px;
+   }
+   .moto-tours .dollar{
+      font-size: 36px;
+   }
+   .moto-tours .person{
+      display:block;
+      font-size: 22px;
+      font-weight: 200;
+   }
+
+
+
+   /*Part 3*/
+
+   #travel-blog{
+      width: 1500px;
+      height: 920px;
+      background-color: #ededed;
+      margin: auto;
+    }
+    .travel-text {
+      padding-top: 110px;  
+   }
+    .travel-header {
+      text-align: center;
+      text-transform: uppercase; 
+      font-family: 'Bebas Neue';
+      font-size: 68.2px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #1a1919;
+      margin-bottom: 10px; 
+      margin-top: 0; 
+      padding-top: 0;      
+   }  
+    .sub-travel-blog{      
+      font-family: Lato;
+      font-size: 17.8px;
+      line-height: 26px;
+      font-weight: 500;
+      letter-spacing: 0.025em;
+      color: #1a1919;
+      text-align: center;  
+      margin-top: 0;    
+    }
+    .motobikers{       
+      height: 20px;
+      width: 1185px;
+      margin: auto;
+      margin-left: 150px;
+      margin-right: 165px;
+      display: inline-block;
+   }
+    .motobiker1{
+      position: relative;   
+      width: 380px;  
+      width: 385px;
+      margin: 0;
+   }
+    .rectangle{
+      position: absolute;
+      width: 363px;
+      height: 350px;
+    }
+    .triangle{
+      position: relative;
+      width: 175px;
+      height: 186px;
+      top: 185px;
+      right: 20px;
+   }
+    .motobiker1-txt{
+      position: absolute;
+      top: 235px;
+   }
+    .txt1{
+      font-family: 'Bebas Neue';
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0
+   }
+    .txt2{
+      font-family: 'Bebas Neue';
+      font-size: 21.6px;
+      line-height: 1.2;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      margin-top: 0;
+   }
+    .blog-txt{
+      position: relative;
+      width: 385px;
+      top: 200px;
+   }
+    .blog-txt1{
+      font-family: 'Helvetica Std Cond';
+      font-size: 26px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: #202020;
+      margin-top: 10px;
+   }
+    .blog-txt2{
+      font-family: Lato;
+      font-size: 17.8px;
+      line-height: 1.2;
+      font-weight: 500;
+      letter-spacing: 0.025em;
+      color: #676767;   
+   }
+    .motobiker2{
+      position: relative;
+      width: 380px;
+      bottom: 376px;
+      left: 415px;
+      margin: 0;
+   }
+    .motobiker3{
+      position: relative;
+      width: 380px;
+      bottom: 753px;
+      left: 830px;
+      margin: 0;
+   }
+    .motobiker1 h3, .motobiker2 h3, .motobiker3 h3{
+      font:26px/30px 'Open Sans', sans-serif;
+      font-weight: 700;
+      margin:50px 0 20px;
+    }
+   a{
+      text-decoration: none;
+   }
+    #jurney{
+      position: relative;
+      height: 433px;
+      width: 1500px;
+      margin: auto;
+      overflow: hidden;
+   }   
+    #jurney:hover img {
+      filter: brightness(50%);
+      transition: 1s ease;
+     }
+   #jurney img{
+      transition: 4s ease;
+   }
+   .place-image-here{
+      position: absolute;
+      width: 1500px;
+      margin: auto;
+      bottom: -7%;      
+   }
+   .start-your-jurney{
+      position: relative;    
+      text-align: center;
+      color: #fff;
+      z-index: 10;      
+      width: 100%;
+      left: 0;
+      top: 40px;
+      opacity: 0;
+      transition: 1s ease;
+   }
+   #jurney:hover .start-your-jurney{
+      top: 5px;
+      opacity: 1;
+      transition: 1s ease;
+   }
+   .start-your-jurney h3{ 
+      margin-top: 60px; 
+      margin-bottom: 10px;    
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 68.2px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #fff;
+   }
+   .start-your-jurney p{
+      text-align: center;
+      font-family: Lato, sans-serif;
+      font-size: 17.8px;
+      line-height: 26px;
+      font-weight: 500;
+      letter-spacing: 0.025em;
+      color: #fefefe;
+      margin-top: 10px;
+   }  
+   .location{
+      position: relative;
+      z-index: 900;
+      width: 1500px;
+      margin: auto;
+      } 
+   .location img{
+      position: absolute;
+      top: -120px;
+      left: 670px;      
+   }
+   footer{
+    width: 1500px;
+    height: 500px;
+    padding-top: 20px;
+    margin: auto;
+    background-color: #ededed;
+   }
+   .contacts{
+   width: 1035;
+   height: 150px;
+   margin: auto;
+   padding-left: 150px;
+   padding-right: 150px;
+   padding-top: 40px;
+   padding: 40px 150px;
+   }
+   .email, .phone, .address{
+   text-align: center;
+   float: left;
+   height: 50px;
+   padding:50px ;
+   }
+   .phone{
+      margin-left: 40px;
+      padding-right: 0;
+   }
+   .email img, .phone img, .address img{
+   margin: 30px;
+   float: left;
+   }
+   .email-p, .phone-p, .address-p{
+   text-align: left;
+   padding-top: 10px;
+   width: 300px
+   }
+   .email-p h5, .phone-p h5,.address-p h5{
+   font-family: 'Helvetica Std Cond', sans-serif;
+   font-size: 26px;
+   line-height: 1.2;
+   font-weight: 700;
+   letter-spacing: -0.025em;
+   color: #181818;
+   margin: 10px;
+   }
+   .email-p p, .phone-p p, .address-p p{
+   font-family: 'Times New Roman',sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 400;
+   letter-spacing: 0.025em;
+   color: #262626;
+   margin: 0px;
+   } 
+   #copyright{
+   height: 185px;  
+   background-color: #cd0a2d;
+   color: #fff;
+   text-align: center;
+   }
+   #copyright p{
+   font-family: 'Times New Roman';
+   font-size: 17px;
+   line-height: 36px;
+   font-weight: 400;
+   letter-spacing: 0.025em;
+   color: #ffffff;
+   padding: 65px 0 0 0;
+   margin: 0;
+   }
+   .bottom-social{
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+   vertical-align: middle;
+   margin:22px 400px 80px 400px ;
+   }
+   .bottom-social li{
+   list-style-type: none;
+   display: inline-block;
+   margin-left: 27px;
+   text-align: center;
+   box-sizing: border-box;
+   }
+   .bottom-social a{
+   display: inline-block;
+   width: 65px;
+   height: 65px;
+   border:5px solid#F2D649;
+   border-radius: 50%;
+   text-align: center;
+   box-sizing: border-box;
+   vertical-align: top;
+   transition:border-color, background-color 0.4s;
+   }
+   .bottom-social img{
+   margin-top: 15px;
+   text-align: center;
+   }
+   .bottom-social a:hover{
+   border-color: #000;
+   background-color: #F2D649;
+   }
+   .bottom-social a:active{
+   border-color:  #000;
+   background-color: #cd0a2d;
+   }
+   .bottom-social a:hover img{
+   filter: brightness(100);
+   }
